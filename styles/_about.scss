@@ -1,0 +1,23 @@
+.about-intro {
+	padding-bottom: 100px;
+	&__body {
+		justify-content: space-between;
+		align-items: flex-start;
+		gap: 30px;
+	}
+	&__text {
+		flex: 0 1 670px;
+		p {
+			max-width: 470px;
+			margin: 0 auto;
+			line-height: 1.6;
+		}
+		p + p {
+			margin-top: 30px;
+		}
+	}
+	&__picture {
+		border-radius: 10px;
+		overflow: hidden;
+	}
+}

@@ -1,0 +1,38 @@
+.nf {
+	padding-top: 40px;
+	padding-bottom: 65px;
+	.breadcrumbs {
+		margin-top: 0;
+	}
+	.section-title {
+		margin-bottom: 30px;
+	}
+	&__content {
+		font-size: 240px;
+		font-weight: 700;
+		color: var(--accent-color);
+		text-align: center;
+		position: relative;
+	}
+	&__picture {
+		position: absolute;
+		max-width: 90px;
+		width: 100%;
+		height: auto;
+		bottom: 35px;
+		left: calc(50% - 40px);
+		svg {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+	&__link {
+		margin: 0 auto;
+		a {
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+	}
+	
+}

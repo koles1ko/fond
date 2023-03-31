@@ -1,0 +1,996 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com">
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com">
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="styles/vendor/swiper-bundle.min.css">
+  <link
+    rel="stylesheet"
+    href="styles/style.css">
+  <title>Document</title>
+</head>
+<body>
+<div class="wrapper">
+  <div class="content">
+    <header class="header">
+      <div class="container">
+        <div class="header__body flex-body">
+          <a href="/" class="header__logo flex-body">
+            <div class="header__img">
+              <img
+                src="img/logo.svg"
+                alt="logo">
+            </div>
+            <div class="header__text">
+              <span>Благотворительный фонд</span>
+              Богдана Сафонова
+            </div>
+          </a>
+          <div class="header__actions flex-body">
+            <div class="header__socials flex-body">
+              <a href="#" class="header__vk">
+                <svg>
+                  <use xlink:href="/img/icons/sprite.svg#vk"></use>
+                </svg>
+              </a>
+              <a href="#" class="header__tg">
+                <svg>
+                  <use xlink:href="img/icons/sprite.svg#telegram"></use>
+                </svg>
+              </a>
+              <a href="#" class="header__yt">
+                <svg>
+                  <use xlink:href="img/icons/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="header__contacts">
+              <div class="header__phone">
+                <a href="tel:74950050577">+7 (495) 005-05-77</a>
+              </div>
+              <div class="header__mail">
+                <svg>
+                  <use xlink:href="img/icons/sprite.svg#mail"></use>
+                </svg>
+                <a href="mailto:info@fundbs.com">info@fundbs.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="header__buttons flex-body">
+            <div class="header__search header-toggle-button-search">
+              <svg>
+                <use xlink:href="img/icons/sprite.svg#search-1"></use>
+              </svg>
+            </div>
+            <div class="header__menu header-toggle-button-menu">
+              <span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="address-intro bg_circle-green bg_circle">
+        <div class="container">
+          <div class="breadcrumbs">
+            <nav>
+              <ul class="flex-body">
+                <li>
+                  <a href="#">Главная</a>
+                </li>
+                <li>
+                  <a href="#">Помощь</a>
+                </li>
+                <li>
+                  <span>Вы спасли</span>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="page-intro-content">
+            <div class="section-title ">
+              <h3>
+                Вы спасли
+              </h3>
+            </div>
+            <div class="address-intro__form address-form">
+              <form name="help-filter">
+                <div class="flex-body address-form__body">
+                  <div class="address-form__age address-form__box">
+                    <div class="address-form__placeholder">Возраст, лет</div>
+                    <div class="flex-body">
+                      <div class="form-input">
+                        <label for="age-from">от</label>
+                        <input type="text" id="age-from" name="age-from" value="0" data-v="0" data-type="min">
+                      
+                      </div>
+                      <div class="form-input">
+                        <label for="age-to">до</label>
+                        <input type="text" id="age-to" name="age-to" value="35" data-v="24" data-type="max">
+                      
+                      </div>
+                    </div>
+                    <div class="static-range static-range-age">
+                      <div class="static-range__placeholder"></div>
+                      <div class="static-range__placeholder--disabled"></div>
+                    </div>
+                  </div>
+                  <div class="address-form__cost address-form__box">
+                    <div class="address-form__placeholder">Осталось собрать, ₽</div>
+                    <div class="flex-body">
+                      <div class="form-input">
+                        <label for="cost-from">от</label>
+                        <input type="text" id="cost-from" name="cost-from" value="12" data-v="0" data-type="min">
+                      
+                      </div>
+                      <div class="form-input">
+                        <label for="cost-to">до</label>
+                        <input type="text" id="cost-to" name="cost-to" value="125 202" data-v="250 000" data-type="max">
+                      
+                      </div>
+                    </div>
+                    <div class="static-range static-range-cost ">
+                      <div class="static-range__placeholder"></div>
+                      <div class="static-range__placeholder--disabled"></div>
+                    </div>
+                  </div>
+                  <div class="address-form__city">
+                    <div class="select-custom">
+                      <div class="select-custom__value">
+                        <div class="address-form__box">
+                          <div class="form-input">
+                            <div class="address-form__placeholder">Город</div>
+                            <label for="city">Любой</label>
+                            <input type="text" disabled value="" name="city" id="city">
+                            
+                            <div class="address-form__arrow select-custom__arrow">
+                              <svg>
+                                <use xlink:href="img/icons/sprite.svg#chevron"></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="select-custom__list">
+                        <ul>
+                          <li>Любой</li>
+                          <li>Город 1</li>
+                          <li>Город 2</li>
+                          <li>Город с очень длинным названием который наверно не поместится ни в один элемент</li>
+                          <li>Город 4</li>
+                          <li>Город 5</li>
+                          <li>Город 6</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="section  ">
+        <div class="container">
+          <div class="address-help">
+            <div class="grid-body address-help__cards grid-col-4 grid-col-xl-3 grid-col-l-2 grid-col-s-1">
+              <div class="address-help__card saved help-card">
+                <div class="help-card__picture">
+                  <div class="help-card__photo">
+                    <img src="img/day-tale.jpg" alt="">
+                  </div>
+                  <div
+                    class="help-card__progress-circle progress-circle"
+                    data-percent="100"
+                  >
+                    <svg viewBox="0 0 120 120">
+                      <circle class="placeholder"
+                              cx="60"
+                              cy="60"
+                              r="55"
+                      />
+                      <circle class="current"
+                              cx="60"
+                              cy="60"
+                              r="55"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="help-card__name">
+                  Ярослав Беднов
+                </div>
+                <div class="help-card__age">
+                  8 лет
+                </div>
+                <div class="help-card__progress-data">
+                  <span>25 000 руб.</span>
+                </div>
+                <div class="help-card__title">
+                  Сбор средств на реабилитацию
+                </div>
+              </div>
+              <div class="address-help__card saved help-card">
+                <div class="help-card__picture">
+                  <div class="help-card__photo">
+                    <img src="img/day-tale.jpg" alt="">
+                  </div>
+                  <div
+                    class="help-card__progress-circle progress-circle"
+                    data-percent="100"
+                  >
+                    <svg viewBox="0 0 120 120">
+                      <circle class="placeholder"
+                              cx="60"
+                              cy="60"
+                              r="55"
+                      />
+                      <circle class="current"
+                              cx="60"
+                              cy="60"
+                              r="55"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="help-card__name">
+                  Ярослав Беднов
+                </div>
+                <div class="help-card__age">
+                  8 лет
+                </div>
+                <div class="help-card__progress-data">
+                  <span>25 000 руб.</span>
+                </div>
+                <div class="help-card__title">
+                  Сбор средств на реабилитацию
+                </div>
+              </div>
+              <div class="address-help__card saved help-card">
+                <div class="help-card__picture">
+                  <div class="help-card__photo">
+                    <img src="img/day-tale.jpg" alt="">
+                  </div>
+                  <div
+                    class="help-card__progress-circle progress-circle"
+                    data-percent="100"
+                  >
+                    <svg viewBox="0 0 120 120">
+                      <circle class="placeholder"
+                              cx="60"
+                              cy="60"
+                              r="55"
+                      />
+                      <circle class="current"
+                              cx="60"
+                              cy="60"
+                              r="55"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="help-card__name">
+                  Ярослав Беднов
+                </div>
+                <div class="help-card__age">
+                  8 лет
+                </div>
+                <div class="help-card__progress-data">
+                  <span>25 000 руб.</span>
+                </div>
+                <div class="help-card__title">
+                  Сбор средств на реабилитацию
+                </div>
+              </div>
+              <div class="address-help__card saved help-card">
+                <div class="help-card__picture">
+                  <div class="help-card__photo">
+                    <img src="img/day-tale.jpg" alt="">
+                  </div>
+                  <div
+                    class="help-card__progress-circle progress-circle"
+                    data-percent="100"
+                  >
+                    <svg viewBox="0 0 120 120">
+                      <circle class="placeholder"
+                              cx="60"
+                              cy="60"
+                              r="55"
+                      />
+                      <circle class="current"
+                              cx="60"
+                              cy="60"
+                              r="55"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="help-card__name">
+                  Ярослав Беднов
+                </div>
+                <div class="help-card__age">
+                  8 лет
+                </div>
+                <div class="help-card__progress-data">
+                  <span>25 000 руб.</span>
+                </div>
+                <div class="help-card__title">
+                  Сбор средств на реабилитацию
+                </div>
+              </div>
+              <div class="address-help__card saved help-card">
+                <div class="help-card__picture">
+                  <div class="help-card__photo">
+                    <img src="img/day-tale.jpg" alt="">
+                  </div>
+                  <div
+                    class="help-card__progress-circle progress-circle"
+                    data-percent="100"
+                  >
+                    <svg viewBox="0 0 120 120">
+                      <circle class="placeholder"
+                              cx="60"
+                              cy="60"
+                              r="55"
+                      />
+                      <circle class="current"
+                              cx="60"
+                              cy="60"
+                              r="55"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="help-card__name">
+                  Ярослав Беднов
+                </div>
+                <div class="help-card__age">
+                  8 лет
+                </div>
+                <div class="help-card__progress-data">
+                  <span>25 000 руб.</span>
+                </div>
+                <div class="help-card__title">
+                  Сбор средств на реабилитацию
+                </div>
+              </div>
+              <div class="address-help__card saved help-card">
+                <div class="help-card__picture">
+                  <div class="help-card__photo">
+                    <img src="img/day-tale.jpg" alt="">
+                  </div>
+                  <div
+                    class="help-card__progress-circle progress-circle"
+                    data-percent="100"
+                  >
+                    <svg viewBox="0 0 120 120">
+                      <circle class="placeholder"
+                              cx="60"
+                              cy="60"
+                              r="55"
+                      />
+                      <circle class="current"
+                              cx="60"
+                              cy="60"
+                              r="55"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="help-card__name">
+                  Ярослав Беднов
+                </div>
+                <div class="help-card__age">
+                  8 лет
+                </div>
+                <div class="help-card__progress-data">
+                  <span>25 000 руб.</span>
+                </div>
+                <div class="help-card__title">
+                  Сбор средств на реабилитацию
+                </div>
+              </div>
+              <div class="address-help__card saved help-card">
+                <div class="help-card__picture">
+                  <div class="help-card__photo">
+                    <img src="img/day-tale.jpg" alt="">
+                  </div>
+                  <div
+                    class="help-card__progress-circle progress-circle"
+                    data-percent="100"
+                  >
+                    <svg viewBox="0 0 120 120">
+                      <circle class="placeholder"
+                              cx="60"
+                              cy="60"
+                              r="55"
+                      />
+                      <circle class="current"
+                              cx="60"
+                              cy="60"
+                              r="55"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="help-card__name">
+                  Ярослав Беднов
+                </div>
+                <div class="help-card__age">
+                  8 лет
+                </div>
+                <div class="help-card__progress-data">
+                  <span>25 000 руб.</span>
+                </div>
+                <div class="help-card__title">
+                  Сбор средств на реабилитацию
+                </div>
+              </div>
+              <div class="address-help__card saved help-card">
+                <div class="help-card__picture">
+                  <div class="help-card__photo">
+                    <img src="img/day-tale.jpg" alt="">
+                  </div>
+                  <div
+                    class="help-card__progress-circle progress-circle"
+                    data-percent="100"
+                  >
+                    <svg viewBox="0 0 120 120">
+                      <circle class="placeholder"
+                              cx="60"
+                              cy="60"
+                              r="55"
+                      />
+                      <circle class="current"
+                              cx="60"
+                              cy="60"
+                              r="55"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="help-card__name">
+                  Ярослав Беднов
+                </div>
+                <div class="help-card__age">
+                  8 лет
+                </div>
+                <div class="help-card__progress-data">
+                  <span>25 000 руб.</span>
+                </div>
+                <div class="help-card__title">
+                  Сбор средств на реабилитацию
+                </div>
+              </div>
+              <div class="address-help__card saved help-card">
+                <div class="help-card__picture">
+                  <div class="help-card__photo">
+                    <img src="img/day-tale.jpg" alt="">
+                  </div>
+                  <div
+                    class="help-card__progress-circle progress-circle"
+                    data-percent="100"
+                  >
+                    <svg viewBox="0 0 120 120">
+                      <circle class="placeholder"
+                              cx="60"
+                              cy="60"
+                              r="55"
+                      />
+                      <circle class="current"
+                              cx="60"
+                              cy="60"
+                              r="55"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="help-card__name">
+                  Ярослав Беднов
+                </div>
+                <div class="help-card__age">
+                  8 лет
+                </div>
+                <div class="help-card__progress-data">
+                  <span>25 000 руб.</span>
+                </div>
+                <div class="help-card__title">
+                  Сбор средств на реабилитацию
+                </div>
+              </div>
+              <div class="address-help__card saved help-card">
+                <div class="help-card__picture">
+                  <div class="help-card__photo">
+                    <img src="img/day-tale.jpg" alt="">
+                  </div>
+                  <div
+                    class="help-card__progress-circle progress-circle"
+                    data-percent="100"
+                  >
+                    <svg viewBox="0 0 120 120">
+                      <circle class="placeholder"
+                              cx="60"
+                              cy="60"
+                              r="55"
+                      />
+                      <circle class="current"
+                              cx="60"
+                              cy="60"
+                              r="55"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="help-card__name">
+                  Ярослав Беднов
+                </div>
+                <div class="help-card__age">
+                  8 лет
+                </div>
+                <div class="help-card__progress-data">
+                  <span>25 000 руб.</span>
+                </div>
+                <div class="help-card__title">
+                  Сбор средств на реабилитацию
+                </div>
+              </div>
+              <div class="address-help__card saved help-card">
+                <div class="help-card__picture">
+                  <div class="help-card__photo">
+                    <img src="img/day-tale.jpg" alt="">
+                  </div>
+                  <div
+                    class="help-card__progress-circle progress-circle"
+                    data-percent="100"
+                  >
+                    <svg viewBox="0 0 120 120">
+                      <circle class="placeholder"
+                              cx="60"
+                              cy="60"
+                              r="55"
+                      />
+                      <circle class="current"
+                              cx="60"
+                              cy="60"
+                              r="55"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="help-card__name">
+                  Ярослав Беднов
+                </div>
+                <div class="help-card__age">
+                  8 лет
+                </div>
+                <div class="help-card__progress-data">
+                  <span>25 000 руб.</span>
+                </div>
+                <div class="help-card__title">
+                  Сбор средств на реабилитацию
+                </div>
+              </div>
+              <div class="address-help__card saved help-card">
+                <div class="help-card__picture">
+                  <div class="help-card__photo">
+                    <img src="img/day-tale.jpg" alt="">
+                  </div>
+                  <div
+                    class="help-card__progress-circle progress-circle"
+                    data-percent="100"
+                  >
+                    <svg viewBox="0 0 120 120">
+                      <circle class="placeholder"
+                              cx="60"
+                              cy="60"
+                              r="55"
+                      />
+                      <circle class="current"
+                              cx="60"
+                              cy="60"
+                              r="55"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="help-card__name">
+                  Ярослав Беднов
+                </div>
+                <div class="help-card__age">
+                  8 лет
+                </div>
+                <div class="help-card__progress-data">
+                  <span>25 000 руб.</span>
+                </div>
+                <div class="help-card__title">
+                  Сбор средств на реабилитацию
+                </div>
+              </div>
+            </div>
+            <div class="address-help__show-more btn btn_accent">
+              <a href="javascript:void(0)">Показать еще</a>
+            </div>
+            <div class="pagination address-help__pagination flex-body">
+              <a href="#" class="pagination__arrow pagination__arrow_left default-arrow default-arrow_left">
+                <svg>
+                  <use xlink:href="img/icons/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+              <div class="pagination__nums flex-body">
+                <a class="pagination__item" href="#">1</a>
+                <span class="pagination__item pagination__current">2</span>
+                <a class="pagination__item" href="#">3</a>
+                <a class="pagination__item" href="#">4</a>
+                <a href="#" class="pagination__item pagination__pre-separator">5</a>
+                <a class="pagination__item" href="#">10</a>
+              </div>
+              <a href="#" class="pagination__arrow pagination__arrow_right default-arrow default-arrow_right">
+                <svg>
+                  <use xlink:href="img/icons/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="section dispatch bg_blue">
+        <div class="container">
+          <div class="dispatch__content">
+            <div class="dispatch__body">
+              <div class="dispatch__title">
+                Подпишитесь на рассылку Фонда
+              </div>
+              <div class="dispatch__description">
+                Оставьте свой адрес, чтобы получать от нас актуальные новости, не чаще чем 1 раз в месяц.
+              </div>
+              <div class="dispatch__form">
+                <form class="flex-body">
+                  <div class="dispatch__input form-input">
+                    <label for="dispatch-mail"></label>
+                    <input
+                      id="dispatch-mail"
+                      type="text"
+                      placeholder="Ваша электронная почта"
+                      name="dispatch-mail">
+                  
+                  </div>
+                  <div class="dispatch__button">
+                    <button class="btn btn_accent">подписаться</button>
+                  </div>
+                </form>
+              </div>
+              <div class="dispatch__police">
+                Оставляя заявку на рассылку, вы соглашаетесь с
+                <a href="#">
+                  политикой в отношении обработки персональных данных
+                </a>
+              </div>
+            </div>
+            <div class="dispatch__picture">
+              <img src="img/dispatch.svg" alt="">
+            </div>
+          
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top section_bb">
+        <div class="footer__body flex-body">
+          <div class="footer__logo flex-body">
+            <div class="footer__img">
+              <img
+                src="img/logo.svg"
+                alt="logo">
+            </div>
+            <div class="footer__text">
+              <span>Благотворительный фонд</span>
+              Богдана Сафонова
+            </div>
+          </div>
+          <div class="footer__socials flex-body">
+            <a href="#" class="footer__vk">
+              <svg>
+                <use xlink:href="/img/icons/sprite.svg#vk"></use>
+              </svg>
+            </a>
+            <a href="#" class="footer__tg">
+              <svg>
+                <use xlink:href="img/icons/sprite.svg#telegram"></use>
+              </svg>
+            </a>
+            <a href="#" class="footer__yt">
+              <svg>
+                <use xlink:href="img/icons/sprite.svg#youtube"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__middle section_bb flex-body">
+        <nav class="footer__col footer__menu">
+          <div class="footer__title">
+            О фонде
+          </div>
+          <ul>
+            <li>
+              <a href="#">О нас</a>
+            </li>
+            <li>
+              <a href="#">Документы и реквизиты</a>
+            </li>
+            <li>
+              <a href="#">Друзья фонда</a>
+            </li>
+            <li>
+              <a href="#">Отчеты</a>
+            </li>
+            <li>
+              <a href="#">Вакансии</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer__col footer__menu">
+          <div class="footer__title">
+            Информация
+          </div>
+          <ul>
+            <li>
+              <a href="#">Статьи</a>
+            </li>
+            <li>
+              <a href="#">Законотворческая работа</a>
+            </li>
+            <li>
+              <a href="#">Вопрос-ответ</a>
+            </li>
+            <li>
+              <a href="#">СМИ о нас</a>
+            </li>
+            <li>
+              <a href="#">Новости</a>
+            </li>
+            <li>
+              <a href="#">Наши видео</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer__col footer__menu">
+          <div class="footer__title">
+            Помощь
+          </div>
+          <ul>
+            <li>
+              <a href="#">Адресная помощь</a>
+            </li>
+            <li>
+              <a href="#">Помощь фонду</a>
+            </li>
+            <li>
+              <a href="#">Вы спасли</a>
+            </li>
+            <li>
+              <a href="#">Получить помощь</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__col">
+          <div class="footer__phone">
+            <a href="tel:74950050577">+7 (495) 005-05-77</a>
+          </div>
+          <div class="footer__mail">
+            <a href="mailto:info@fundbs.com">info@fundbs.com</a>
+          </div>
+          <div class="footer__address">
+            216507, Смоленская обл,
+            Рославльский р-н, г. Рославль,
+            15-й мкр, д 4
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom flex-body">
+        <div class="footer__copy">
+          <p>
+            © 2022-2023 Благотворительный фонд Богдана Сафонова «Движение к достижению»
+          </p>
+        </div>
+        <div class="footer__police">
+          <a href="#">
+            Публичная оферта о заключении договора пожертвования
+          </a>
+          <a href="#">
+            Политика в отношении обработки персональных данных
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="header-toggle-wrapper header-toggle-menu">
+    <div class="header-toggle ">
+      <div class="container">
+        <div class="header-toggle__wrapper">
+          <div class="header-toggle__search">
+            <div class="header-toggle__title-search">
+              Что вы хотите найти
+            </div>
+            <form action="">
+              <div class="header-toggle__form flex-body">
+                <div class="header-toggle__input">
+                  <label>
+                    <input type="text" placeholder="Начните писать">
+                  </label>
+                </div>
+                <button class="header-toggle__button btn btn_accent">
+                  Искать
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="header-toggle__top flex-body section_bb ">
+            <nav class="header-toggle__col header-toggle__menu">
+              <div class="header-toggle__title">
+                О фонде
+              </div>
+              <ul>
+                <li>
+                  <a href="#">О нас</a>
+                </li>
+                <li>
+                  <a href="#">Документы и реквизиты</a>
+                </li>
+                <li>
+                  <a href="#">Друзья фонда</a>
+                </li>
+                <li>
+                  <a href="#">Отчеты</a>
+                </li>
+                <li>
+                  <a href="#">Вакансии</a>
+                </li>
+                <li>
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <nav class="header-toggle__col header-toggle__menu">
+              <div class="header-toggle__title">
+                Информация
+              </div>
+              <ul>
+                <li>
+                  <a href="#">Статьи</a>
+                </li>
+                <li>
+                  <a href="#">Законотворческая работа</a>
+                </li>
+                <li>
+                  <a href="#">Вопрос-ответ</a>
+                </li>
+                <li>
+                  <a href="#">СМИ о нас</a>
+                </li>
+                <li>
+                  <a href="#">Новости</a>
+                </li>
+                <li>
+                  <a href="#">Наши видео</a>
+                </li>
+              </ul>
+            </nav>
+            <nav class="header-toggle__col header-toggle__menu">
+              <div class="header-toggle__title">
+                Помощь
+              </div>
+              <ul>
+                <li>
+                  <a href="#">Адресная помощь</a>
+                </li>
+                <li>
+                  <a href="#">Помощь фонду</a>
+                </li>
+                <li>
+                  <a href="#">Вы спасли</a>
+                </li>
+                <li>
+                  <a href="#">Получить помощь</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-toggle__contacts header__contacts">
+            <div class="header__phone">
+              <a href="tel:74950050577">+7 (495) 005-05-77</a>
+            </div>
+            <div class="header__mail">
+              <svg>
+                <use xlink:href="img/icons/sprite.svg#mail"></use>
+              </svg>
+              <a href="mailto:info@fundbs.com">info@fundbs.com</a>
+            </div>
+          </div>
+          <div class="header-toggle__socials socials flex-body">
+            <a href="#" class="header__vk">
+              <svg>
+                <use xlink:href="/img/icons/sprite.svg#vk"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__tg">
+              <svg>
+                <use xlink:href="img/icons/sprite.svg#telegram"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__yt">
+              <svg>
+                <use xlink:href="img/icons/sprite.svg#youtube"></use>
+              </svg>
+            </a>
+          </div>
+          
+          <div class="header-toggle__picture">
+            <img src="img/header-toggle.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-toggle-wrapper header-toggle-search">
+    <div class="header-toggle ">
+      <div class="container">
+        <div class="header-toggle__wrapper">
+          <div class="header-toggle__close">
+            <span></span><span></span>
+          </div>
+          <div class="header-toggle__title-search">
+            Что вы хотите найти
+          </div>
+          <form action="">
+            <div class="header-toggle__form flex-body">
+              <div class="header-toggle__input">
+                <label>
+                  <input type="text" placeholder="Начните писать">
+                </label>
+              </div>
+              <button class="header-toggle__button btn btn_accent">
+                Искать
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/vendor/swiper-bundle.min.js"></script>
+  <script src="js/StaticRange.js"></script>
+  <script src="js/script.js"></script>
+</div>
+</body>
+</html>

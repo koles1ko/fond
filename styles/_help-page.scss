@@ -1,0 +1,82 @@
+.help-intro {
+	&__description {
+		max-width: 770px;
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		padding-bottom: 330px;
+	}
+}
+
+.help-form {
+	max-width: 770px;
+	margin: -280px auto 0;
+	position: relative;
+	z-index: 2;
+	
+	.card {
+		&__prices {
+			ul {
+				grid-template-columns: repeat(4, 110px);
+			}
+		}
+		
+		&__credit {
+			.form-input + .form-input {
+				margin-top: 0;
+			}
+		}
+		
+		&__credit-row {
+			gap: 30px;
+		}
+		
+		&__police {
+			padding-bottom: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: left;
+			font-size: 12px;
+			
+			a {
+				font-size: 12px;
+			}
+			
+			div {
+				width: 100%;
+			}
+		}
+		
+		&__variants {
+			ul {
+				justify-content: flex-start;
+			}
+		}
+		
+		&__bottom {
+			padding-bottom: 40px;
+		}
+		
+		&__custom-cost-body {
+			justify-content: flex-end;
+			column-gap: 40px;
+		}
+		
+		
+	}
+	
+	&__button {
+		max-width: none;
+		width: 100%;
+		margin-top: 0;
+		
+		button {
+			width: 100%;
+			text-transform: uppercase;
+			font-size: 18px;
+			font-weight: 700;
+			font-family: "Fira Sans", sans-serif;
+		}
+	}
+}

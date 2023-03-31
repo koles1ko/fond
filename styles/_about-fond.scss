@@ -1,0 +1,39 @@
+.about-fond-intro {
+	padding-bottom: 100px;
+	.page-intro-content {
+		max-width: 770px;
+		margin: 0 auto;
+		position: relative;
+		z-index: 2;
+	}
+	&__description {
+		p + p {
+			margin-top: 30px;
+		}
+		p {
+			line-height: 1.6;
+		}
+	}
+	&__girl {
+		height: 380px;
+	}
+	&__boy {
+		height: 328px;
+	}
+}
+
+.about-fond-links {
+	&__box {
+		max-width: 870px;
+		margin: 0 auto;
+		gap: 30px;
+		&.flex-body {
+			justify-content: center;
+			.about-fond-links__item {
+				max-width: 270px;
+				width: 100%;
+				
+			}
+		}
+	}
+}

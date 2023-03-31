@@ -1,0 +1,113 @@
+.friends-intro {
+	padding-bottom: 70px;
+	&__content {
+		max-width: 770px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	&__description {
+		line-height: 1.6;
+		margin-bottom: 35px;
+	}
+	&__link {
+		margin: 0 auto 40px;
+		a {
+			padding-left: 44px;
+			padding-right: 44px;
+		}
+	}
+	&__picture {
+		max-width: 430px;
+		height: 240px;
+		margin: 0 auto;
+		svg {
+			width: 100%;
+			height: 100%;
+			display: block;
+		}
+	}
+}
+
+.friends-list {
+	gap: 30px;
+}
+
+.friends-logo {
+	border: 2px solid #f6f6f6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 170px;
+	border-radius: 10px;
+	img {
+		display: inline-block;
+	}
+}
+
+.friends-form {
+	border-radius: 20px;
+	box-shadow: 0 0 20px 5px var(--vacancy-border-color);
+	padding: 40px 0;
+	&__body {
+		max-width: 770px;
+		margin: 0 auto;
+	}
+	&__icon {
+		margin: 0 auto 20px;
+		width: 48px;
+		height: 48px;
+		border-radius: 50%;
+		background-color: var(--accent-color);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		svg {
+			width: 24px;
+			height: 21px;
+			display: block;
+			fill: var(--white);
+		}
+	}
+	&__title {
+		font-family: $ptFamily;
+		font-weight: 700;
+		font-size: 30px;
+		margin-bottom: 50px;
+		text-align: center;
+	}
+	&__inputs {
+		gap: 50px 30px;
+		margin-bottom: 50px;
+	}
+	.form-input {
+		border-radius: 24px;
+		overflow: visible;
+		input {
+			border-radius: 24px;
+		}
+	}
+	.form-area {
+		margin-bottom: 30px;
+		textarea {
+			min-height: 120px;
+		}
+	}
+	&__police {
+		font-size: 12px;
+		text-align: center;
+		margin-bottom: 30px;
+		a {
+			font-size: inherit;
+			text-decoration: underline;
+		}
+	}
+	&__button {
+		display: block;
+		margin: 0 auto;
+		padding: 20px 60px;
+		border-radius: 32px;
+		cursor: pointer;
+	}
+}
+
+

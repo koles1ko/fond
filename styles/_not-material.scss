@@ -1,0 +1,64 @@
+.not-material {
+	&__items {
+		gap: 30px;
+		margin-bottom: 80px;
+	}
+	&__item {
+		border-radius: 10px;
+		overflow: hidden;
+		background-color: var(--general-color);
+		padding: 20px;
+		color: var(--white);
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		text-align: center;
+	}
+	&__icon {
+		width: 48px;
+		height: 48px;
+		border-radius: 50%;
+		overflow: hidden;
+		background-color: var(--accent-color);
+		margin: 0 auto 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		svg {
+			fill: var(--white);
+			max-width: 24px;
+			width: 100%;
+			height: auto;
+		}
+	}
+	&__name {
+		font-size: 18px;
+		font-weight: 600;
+		margin-bottom: 15px;
+	}
+	&__description {
+		font-weight: 300;
+		margin-bottom: 10px;
+	}
+	&__link {
+		max-width: 210px;
+		width: 100%;
+		
+		margin: auto auto 0;
+		a {
+			font-size: 16px;
+			padding-left: 10px;
+			padding-right: 10px;
+			font-weight: 600;
+		}
+	}
+	&__share {
+		font-family: $ptFamily;
+		font-weight: 700;
+		font-size: 24px;
+		text-align: center;
+		margin: 0 auto 35px;
+		max-width: 630px;
+		width: 100%;
+	}
+}

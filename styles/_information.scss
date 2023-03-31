@@ -1,0 +1,80 @@
+.information-intro {
+	padding-bottom: 80px;
+	.page-intro-content {
+		max-width: 770px;
+		margin: 0 auto;
+		position: relative;
+		z-index: 2;
+	}
+	&__description {
+		line-height: 1.6;
+	}
+	&__pictures {
+		bottom: 40px;
+	}
+	&__picture {
+		margin-left: auto;
+		svg {
+			height: 292px;
+		}
+	}
+}
+
+.information-links {
+	//max-width: 87px;
+	&__box {
+		gap: 30px;
+		max-width: 870px;
+		margin: 0 auto;
+	}
+}
+
+.information-help {
+	&__slider {
+		margin-bottom: 60px;
+		position: relative;
+		.swiper-button-prev,
+		.swiper-button-next {
+			width: 48px;
+			height: 48px;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			&::after {
+				display: none;
+			}
+			&.swiper-button-disabled {
+				display: none;
+			}
+			svg {
+				width: 18px;
+				height: 16px;
+				fill: var(--white);
+			}
+		}
+		.swiper-button-prev {
+			left: -24px;
+		}
+		.swiper-button-next {
+			right: -24px;
+			svg {
+				transform: rotate(180deg);
+			}
+		}
+		.swiper-pagination {
+			display: none;
+			bottom: -40px;
+			.swiper-pagination-bullet-active {
+				background: var(--accent-color);
+			}
+		}
+	}
+	&__card {
+		box-sizing: border-box;
+		margin: 0 auto;
+	}
+	&__link {
+		margin: 0 auto;
+	}
+}

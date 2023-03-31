@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+      .k1-timer__flex {
+          display: flex;
+          position: relative;
+          /*align-items: flex-end;*/
+      }
+
+      .k1-timer__value-block {
+          font-size: 150px;
+          line-height: 1;
+          font-weight: 600;
+          background-color: #BDBDBD;
+          padding: 10px;
+          border-radius: 15px;
+      }
+      .k1-timer__value-block + .k1-timer__value-block {
+          margin-left: 15px;
+      }
+      .k1-timer__separator {
+          font-size: 150px;
+          line-height: 1;
+          font-weight: 600;
+      }
+
+      .k1-timer__separator:not(.k1-timer__separator_days) {
+          width: 60px;
+          position: relative;
+      }
+
+      .k1-timer__separator:not(.k1-timer__separator_days)::before ,
+      .k1-timer__separator:not(.k1-timer__separator_days)::after {
+          position: absolute;
+          display: block;
+          content: "";
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background-color: black;
+          left: calc(50% - 10px);
+          
+      }
+
+      .k1-timer__separator:not(.k1-timer__separator_days)::before {
+          top: 25%
+      }
+
+      .k1-timer__separator:not(.k1-timer__separator_days)::after {
+          bottom: 25%
+      }
+      
+      .k1-timer__separator_days {
+          font-size: 110px;
+          margin: 0 15px;
+          line-height: 170px;
+      }
+  </style>
+</head>
+<body>
+<div class="k1-timer k1-timer__flex">
+  <div class="k1-timer__days k1-timer__value-block"></div>
+  <div class="k1-timer__separator k1-timer__separator_days">дней</div>
+  <div class="k1-timer__hours k1-timer__flex">
+    <div class="k1-timer__hours_decimal k1-timer__value-block"></div>
+    <div class="k1-timer__hours_single k1-timer__value-block"></div>
+  </div>
+  <div class="k1-timer__separator"></div>
+  <div class="k1-timer__minutes k1-timer__flex">
+    <div class="k1-timer__minutes_decimal k1-timer__value-block"></div>
+    <div class="k1-timer__minutes_single k1-timer__value-block"></div>
+  </div>
+  <div class="k1-timer__separator"></div>
+  <div class="k1-timer__seconds k1-timer__flex">
+    <div class="k1-timer__seconds_decimal k1-timer__value-block"></div>
+    <div class="k1-timer__seconds_single k1-timer__value-block"></div>
+  </div>
+  <div id="button">Кнопка</div>
+  <div id="button-1">Кнопка - 1</div>
+  
+</div>
+<div  class="k1-phone-input">
+  <label >
+    <input type="text" name="k1-test">
+  </label>
+</div>
+<script src="https://cdn.jsdelivr.net/gh/koles1ko/mask@1.0.3/dist/PhoneMask.js"></script>
+<script src="/js/KTimer.js"></script>
+<script>
+
+</script>
+</body>
+</html>

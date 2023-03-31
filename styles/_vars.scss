@@ -1,0 +1,41 @@
+//.k1 {
+
+
+
+$accentColor: #95c11f;
+
+//$mainRed: #C83E34;
+//$mainBlack: #181818;
+//$mainGrey: #646464;
+//$grey: #F0F0F0;
+
+$mediaS					 : 375px;
+$mediaM					 : 480px;
+$mediaL					 : 768px;
+$mediaXL				 : 920px;
+$mediaXXL				 : 1024px;
+$mediaXXXL			     : 1366px;
+
+$ptFamily: 'PT Sans Narrow', sans-serif;
+
+:root {
+	--general-color: #0b8e36;
+	--general-color-hover: #07752b;
+	--accent-color: #95c11f;
+	--accent-color-hover: #7ba014;
+	--white: #fff;
+	--black: #000;
+	--text-color: #1d1d1d;
+	--bg-blue: #dcf3f9;
+	--bg-green: #dff9db;
+	--section-border-light: #f1f1f1;
+	--input-border: #a5a5a5;
+	--circle-bg: #ededed;
+	--vacancy-border-color: #eeeeee;
+	--document-files-border-color: #eeeeee;
+	--document-files-border-color-hover: #85c69a;
+	--license-shadow-hover: #a6a6a6;
+	
+}
+
+//}

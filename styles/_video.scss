@@ -1,0 +1,19 @@
+.video-intro {
+	padding-bottom: 50px;
+}
+
+.video-page {
+	&__body {
+		gap: 30px;
+		margin-bottom: 40px;
+	}
+	&__content {
+		width: 100%;
+		height: 210px;
+		margin-bottom: 20px;
+		iframe {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}

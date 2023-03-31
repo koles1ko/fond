@@ -1,0 +1,12 @@
+.faq-intro {
+	padding-bottom: 50px;
+}
+
+.faq {
+	&__item {
+		.toggle-body {
+			transition-duration: .3s;
+			transition-timing-function: ease-in-out;
+		}
+	}
+}
